@@ -40,7 +40,6 @@ body {
 
 main { flex: 1 0 auto; }
 
-/* Home page: profile + facts row stacked and centred vertically */
 .home main { display: flex; flex-direction: column; justify-content: center; align-items: stretch; }
 .home .profile { width: 100%; }
 
@@ -53,9 +52,19 @@ a:focus-visible, .nav-toggle:focus-visible + .nav-toggle-label {
 }
 
 .married {
+  margin: 10px 0 0;
+  font-size: 15px;
   font-style: italic;
-  text-align-last: left;
+  color: var(--color-text-subtle);
 }
+.married a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-border-strong);
+}
+.married a:hover { text-decoration-color: currentColor; }
 
 h1, h2, h3 { font-family: var(--font-serif); line-height: 1.2; }
 
